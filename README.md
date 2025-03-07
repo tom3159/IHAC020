@@ -1,15 +1,16 @@
 # IHAC020
 TP FX IPI
+Thomas, Johan, Axel, Chihab
 Bonjour,
 
-#Téléchargez l'ensemble du répertoire. Vous y trouverez tous les fichiers #.md déjà existants.
-#Si vous souhaitez en rédiger, servez-vous du template "Template_MD.txt".
+#TÃ©lÃ©chargez l'ensemble du rÃ©pertoire. Vous y trouverez tous les fichiers #.md dÃ©jÃ  existants.
+#Si vous souhaitez en rÃ©diger, servez-vous du template "Template_MD.txt".
 #Mettez le nom de l'attaque avec l'extension .md.
 #Supprimez les lignes qui ne sont pas utiles.
 
 #Utilisation de l'outil
-#Après avoir récupéré le script et les fichiers .md,
-#rendez le script exécutable :
+#AprÃ¨s avoir rÃ©cupÃ©rÃ© le script et les fichiers .md,
+#rendez le script exÃ©cutable :
 
 ```
 chmod +x list.sh
@@ -29,6 +30,6 @@ Pour avoir l'ensemble des fichier MD
 Il vous proposera de faire une recherche par :
 
 Type de risque
-Par couche du modèle OSI
-Par critère de sécurité
+Par couche du modÃ¨le OSI
+Par critÃ¨re de sÃ©curitÃ©
 Ensuite, laissez-vous porter.
