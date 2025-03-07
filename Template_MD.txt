@@ -1,0 +1,31 @@
+# Nom de l'outil
+## COUCHE 1
+## COUCHE 2
+## COUCHE 3
+## COUCHE 4
+## COUCHE 5
+## COUCHE 6
+## COUCHE 7
+
+
+### usurpation
+### Atteinte à la réputation/image
+### Escalade de privilège
+### Dégradation de privilèges
+### Contournement 
+### Dégradation / limitation
+### Déni de services,Divulgation des informations chiffrées
+### Inaccessibilité des informations chiffrées, Observation
+
+#### ATTAQUE = (Nom de l'attaque)
+
+##### CONFIDENTIALITE
+##### INTEGRITE
+##### DISPONIBILITE
+
+Description :
+Source : 
+
+```
+
+```
