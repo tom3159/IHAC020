@@ -15,11 +15,11 @@ ws_attack_types = wb['ATTAQUES_OUTILS']
 criteres = ["1-Confidentialité", "2-Intégrité", "3-Disponibilité"]
 
 # Couches OSI dynamiques
-osi_row = list(ws_osi_layers.iter_rows(min_row=1, max_row=1, values_only=True))[0][2:]
+osi_row = df_osi_layers.iloc[0]
 osi_layers = [
-    f"{i+1}-Couche {str(val).replace('.0', '').strip()}"
-    for i, val in enumerate(osi_row)
-    if val is not None
+    f"{i+1}-Couche {str(val).strip()}" 
+    for i, val in enumerate(osi_row[2:].values) 
+    if pd.notna(val)
 ]
 
 # Attaques
