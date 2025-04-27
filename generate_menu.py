@@ -1,4 +1,5 @@
 from openpyxl import load_workbook
+import pandas as pd
 
 # Charger le fichier Excel
 fichier_excel = "Analyse_Risques_Biens.xlsx"
@@ -14,13 +15,25 @@ ws_attack_types = wb['ATTAQUES_OUTILS']
 # Critères de sécurité fixes
 criteres = ["1-Confidentialité", "2-Intégrité", "3-Disponibilité"]
 
+# Charger le DataFrame pour les couches OSI
+df_osi_layers = pd.read_excel(fichier_excel, sheet_name="RISQUES_ATTAQUES")
+
 # Couches OSI dynamiques
 osi_row = df_osi_layers.iloc[0]
-osi_layers = [
-    f"{i+1}-Couche {str(val).strip()}" 
-    for i, val in enumerate(osi_row[2:].values) 
-    if pd.notna(val)
-]
+
+# Vérification et ajout de "Couche 1" si la première cellule est vide
+if pd.isna(osi_row[0]):
+    osi_layers = ["1-Couche 1"] + [
+        f"{i+2}-Couche {str(int(float(val)))}"  # Convertir en float puis en int pour éviter les décimales
+        for i, val in enumerate(osi_row[1:].values)
+        if pd.notna(val)
+    ]
+else:
+    osi_layers = [
+        f"{i+1}-Couche {str(int(float(val)))}"  # Convertir en float puis en int pour éviter les décimales
+        for i, val in enumerate(osi_row[1:].values)
+        if pd.notna(val)
+    ]
 
 # Attaques
 attaques = []
