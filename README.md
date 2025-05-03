@@ -60,6 +60,18 @@ Le menu vous propose de rechercher par :
 Laissez-vous guider par les instructions à l’écran.
 
 ---
+## Vous pouraient ensuite lire les fiches avec le reader MD de votre choix
+
+Ici un exemple d'outils que vous pouvez telecharger :
+```
+sudo snap install glow
+```
+```
+glown FICHIER.MD
+```
+---
+---
+
 
 ## 🤝 Contribution
 
