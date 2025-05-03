@@ -17,7 +17,7 @@ fi
 
 # Copie de tous les fichiers .md vers /home/$USER/cheatsheet
 echo "Copie des fichiers .md vers /home/$USER/cheatsheet..."
-cp ./*.md /home/$USER/cheatsheet/
+cp ./MD/*.md /home/$USER/cheatsheet/
 
 # Génération du script Bash interactif
 echo "Génération du script Bash depuis le fichier Excel..."

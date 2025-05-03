@@ -5,7 +5,7 @@
 
 #### ATTAQUE = DÉTECTION DE MATÉRIEL PAR ADRESSE MAC
 
-##### CONFIDENTIALITÉ
+##### CONFIDENTIALITE
 
 **Description** :
 À la couche liaison de données, Nmap permet de détecter les adresses MAC via des requêtes ARP (dans un réseau local). Cela permet d’identifier les équipements actifs.
