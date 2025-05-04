@@ -5,7 +5,7 @@
 
 #### ATTAQUE = DÉTECTION DE CHIFFREMENT SSL/TLS
 
-##### CONFIDENTIALITÉ
+##### CONFIDENTIALITE
 
 **Description** :
 À la couche de présentation, Nmap peut identifier les versions des protocoles de chiffrement (SSL/TLS) utilisées, ce qui permet de repérer des faiblesses potentielles.
