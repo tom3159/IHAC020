@@ -61,6 +61,6 @@ switchport nonegotiate
 ---
 
 ## Sources
-
-- https://www.geeksforgeeks.org/vlan-hopping-attack/  
-- https://www.cisco.com/c/en/us/support/docs/lan-switching/802-1q/12063-3.html
+- https://www.cisco.com/c/fr_ca/support/docs/switches/catalyst-6000-series-switches/10599-88.html
+- https://http.kali.org/pool/main/y/yersinia/
+- https://github.com/tomac/yersinia
