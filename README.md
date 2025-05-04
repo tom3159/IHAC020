@@ -6,7 +6,7 @@
 Bienvenue dans ce projet ! Ce dépôt contient tous les fichiers nécessaires pour travailler efficacement sur l’analyse des risques liés aux biens.
 
 ---
-## 📦 Installation et préparation
+## Installation et préparation
 
 1. **Téléchargez l’ensemble du répertoire**.  
    Vous y trouverez tous les fichiers `.md` existants.
@@ -18,7 +18,7 @@ Bienvenue dans ce projet ! Ce dépôt contient tous les fichiers nécessaires po
 
 4. **Supprimez les lignes inutiles** dans vos fichiers.
 ---
-## ⚙️ Utilisation de l’outil
+## Utilisation de l’outil
 
 Après avoir récupéré le script et les fichiers `.md`, rendez les scripts exécutables :
 ```
@@ -49,7 +49,7 @@ Pour relancer l’outil ultérieurement :
 
 ---
 
-## 🔍 Fonctionnalités du menu interactif
+## Fonctionnalités du menu interactif
 
 Le menu vous propose de rechercher par :
 
@@ -73,7 +73,7 @@ glown FICHIER.MD
 ---
 
 
-## 🤝 Contribution
+## Contribution
 
 Pour toute contribution, veuillez suivre le modèle fourni et respecter la structure des fichiers.
 
@@ -81,6 +81,6 @@ Pour toute contribution, veuillez suivre le modèle fourni et respecter la struc
 N’hésitez pas à nous contacter pour toute question ou suggestion d’amélioration.
 
 ---
-> *Bonne utilisation !* 🚀
+> *Bonne utilisation !*
 
 
