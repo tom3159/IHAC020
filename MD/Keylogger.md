@@ -6,8 +6,8 @@
 
 #### ATTAQUE = KEYLOGGER
 
-##### CONFIDENTIALITÉ
-##### INTÉGRITÉ
+##### CONFIDENTIALITE
+##### INTEGRITE
 
 **Description** :
 Un keylogger enregistre les frappes clavier de l'utilisateur à son insu, permettant à un attaquant de collecter mots de passe, données personnelles, etc.
