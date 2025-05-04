@@ -5,7 +5,7 @@
 
 #### ATTAQUE = EM FLOOD
 
-##### DISPONIBILITÉ
+##### DISPONIBILITE
 
 **Description** :
 Cette attaque consiste à saturer les composants électroniques avec des signaux électromagnétiques (EM) pour provoquer des erreurs ou l’arrêt du système.
