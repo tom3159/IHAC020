@@ -6,8 +6,8 @@
 
 #### ATTAQUE = SCAN DE PORTS TCP/UDP
 
-##### CONFIDENTIALITÉ
-##### INTÉGRITÉ
+##### CONFIDENTIALITE
+##### INTEGRITE
 
 **Description** :
 Nmap est capable de scanner les ports TCP (SYN scan, connect scan) et UDP pour déterminer les services ouverts sur une machine cible.
