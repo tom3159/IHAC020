@@ -14,8 +14,8 @@
 Le clickjacking consiste à tromper un utilisateur en masquant un contenu malveillant derrière un bouton ou lien légitime, souvent via une iframe invisible.
 
 **Source** : https://owasp.org/www-community/attacks/Clickjacking
-             https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
-            https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors
 
 ## Déroulé de l’attaque (PoC)
 
