@@ -5,7 +5,7 @@
 
 #### ATTAQUE = SCAN D’ADRESSES IP ET ICMP
 
-##### CONFIDENTIALITÉ
+##### CONFIDENTIALITE
 
 **Description** :
 Nmap peut effectuer une découverte de réseau (ping scan) pour identifier les hôtes en ligne en envoyant des paquets ICMP Echo, Timestamp, ou Netmask.
