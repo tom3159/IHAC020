@@ -6,8 +6,8 @@
 
 #### ATTAQUE = SESSION HIJACKING PAR COOKIE
 
-##### CONFIDENTIALITÉ
-##### INTÉGRITÉ
+##### CONFIDENTIALITE
+##### INTEGRITE
 
 **Description** :
 Le cookie hijacking permet à un attaquant d'intercepter et de réutiliser un cookie de session pour usurper l'identité de l'utilisateur sur un site web.
