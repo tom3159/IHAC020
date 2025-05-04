@@ -6,8 +6,8 @@
 
 #### ATTAQUE = BRUTE FORCE
 
-##### CONFIDENTIALITÉ
-##### DISPONIBILITÉ
+##### CONFIDENTIALITE
+##### DISPONIBILITE
 
 **Description** :
 Tentative systématique de deviner un mot de passe en essayant toutes les combinaisons possibles jusqu'à trouver la bonne.
