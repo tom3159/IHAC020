@@ -6,8 +6,8 @@
 
 #### ATTAQUE = VLAN HOPPING
 
-##### CONFIDENTIALITÉ
-##### INTÉGRITÉ
+##### CONFIDENTIALITE
+##### INTEGRITE
 
 **Description** :
 Technique permettant à un attaquant de générer du trafic sur un VLAN non autorisé, souvent via des attaques comme "switch spoofing" ou "double tagging".
