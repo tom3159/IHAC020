@@ -23,7 +23,6 @@ https://cheat.sh/sqlmap
 
 ```
 ./sqlmap.py --url = "<url>" --data = "<post-data>" --banner  
-
 ```
 # Analyser les données de la requête et tester | les données de la requête peuvent être obtenues avec burp
 
@@ -34,11 +33,6 @@ https://cheat.sh/sqlmap
 ```
 ./sqlmap.py-r<request-file>--fingerprint   
 ```
-
-# Obtenir le nom d'utilisateur, le nom et le nom d'hôte de la base de données
-```
-
-
 # Vérifiez si l'utilisateur est un administrateur de base de données
 ```
  ./sqlmap.py-r<request-file>--is-dba
