@@ -5,7 +5,7 @@
 
 #### ATTAQUE = DÉTECTION DE SERVICES DE SESSION (SMB, RPC)
 
-##### CONFIDENTIALITÉ
+##### CONFIDENTIALITE
 
 **Description** :
 Nmap permet de découvrir les services réseau gérant des sessions comme SMB, NetBIOS ou RPC, souvent utilisés dans les réseaux Windows.
