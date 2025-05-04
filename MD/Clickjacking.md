@@ -7,8 +7,8 @@
 
 #### ATTAQUE = CLICKJACKING
 
-##### CONFIDENTIALITÉ
-##### INTÉGRITÉ
+##### CONFIDENTIALITE
+##### INTEGRITE
 
 **Description** :
 Le clickjacking consiste à tromper un utilisateur en masquant un contenu malveillant derrière un bouton ou lien légitime, souvent via une iframe invisible.
