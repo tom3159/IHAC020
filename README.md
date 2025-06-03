@@ -50,6 +50,8 @@ source IHAC020/bin/activate
 # 6. Mettre pip à jour et installer les bibliothèques nécessaires
 pip install --upgrade pip
 pip install pandas openpyxl
+pip install openpyxl pandas
+
 
 ```
 ---
