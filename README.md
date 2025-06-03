@@ -17,6 +17,41 @@ Bienvenue dans ce projet ! Ce dépôt contient tous les fichiers nécessaires po
 3. **Nommez chaque fichier** selon le nom de l’attaque, avec l’extension `.md`.
 
 4. **Supprimez les lignes inutiles** dans vos fichiers.
+
+5. **PREREQUIS** Le logiciel fait appelle a python l'environment virtuelle et des librairie. si ce n'est pas déja fait voici ce que vous pouvez executer sur une machine de type UBUNTU
+
+```
+# 1. Mettre à jour le système
+sudo apt update && sudo apt upgrade -y
+
+# 2. Installer les outils nécessaires
+sudo apt install -y wget build-essential libssl-dev zlib1g-dev \
+libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev \
+libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev \
+uuid-dev libffi-dev curl git
+
+# 3. Télécharger et compiler Python 3.12
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/3.12.3/Python-3.12.3.tgz
+sudo tar xvf Python-3.12.3.tgz
+cd Python-3.12.3
+sudo ./configure --enable-optimizations
+sudo make -j$(nproc)
+sudo make altinstall
+
+# 4. Vérifier que Python 3.12 est bien installé
+python3.12 --version
+
+# 5. Créer et activer l’environnement virtuel IHAC020
+cd ~  # ou dans le dossier de ton projet
+python3.12 -m venv IHAC020
+source IHAC020/bin/activate
+
+# 6. Mettre pip à jour et installer les bibliothèques nécessaires
+pip install --upgrade pip
+pip install pandas openpyxl
+
+```
 ---
 ## Utilisation de l’outil
 
