@@ -28,6 +28,7 @@ Lancer votre environement virtuel python
    ```
    python3 -m venv venv
    source venv/bin/activate
+   pip install pandas openpyxl
    python3 generate_menu.py
    ```
 
