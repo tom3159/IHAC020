@@ -24,6 +24,13 @@ Bienvenue dans ce projet ! Ce dépôt contient tous les fichiers nécessaires po
 ---
 ## Utilisation de l’outil
 Lancer votre environement virtuel python
+### Exemple non contractuel
+   ```
+   python3 -m venv venv
+   source venv/bin/activate
+   python3 generate_menu.py
+   ```
+
 ```
 python3 generate_menu.py
 ```
