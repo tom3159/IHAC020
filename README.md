@@ -84,3 +84,12 @@ N’hésitez pas à nous contacter pour toute question ou suggestion d’amélio
 > *Bonne utilisation !*
 
 
+## Explication
+En entrée : Nous sommes partis d’un fichier Excel.
+Nous nous sommes servis de bibliothèques Python pour générer un menu qui s’adapte au contenu du fichier.
+
+En sortie : Nous obtenons un script qui effectue des recherches avec grep pour identifier les types de risques, les différentes couches du modèle OSI et les critères de sécurité.
+On peut effectuer des recherches simples ou combinées.
+
+Aujourd’hui, grâce à la première séance du cours, nous avons alimenté au moins une cheat sheet par couche du modèle OSI.
+Chaque cheat sheet nous fournit les commandes de base ainsi que les liens officiels pour exploiter les outils.
