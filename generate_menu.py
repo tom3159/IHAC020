@@ -1,5 +1,7 @@
 from openpyxl import load_workbook
 import pandas as pd
+import warnings
+warnings.simplefilter("ignore", UserWarning)
 
 # Charger le fichier Excel
 fichier_excel = "Analyse_Risques_Biens.xlsx"
@@ -17,7 +19,7 @@ criteres = ["1-Confidentialité", "2-Intégrité", "3-Disponibilité"]
 df_osi_layers = pd.read_excel(fichier_excel, sheet_name="RISQUES_ATTAQUES")
 osi_row = df_osi_layers.iloc[0]
 
-if pd.isna(osi_row[0]):
+if pd.isna(osi_row.iloc[0]):
     osi_layers = ["1-Couche 1"] + [
         f"{i+2}-Couche {str(int(float(val)))}"
         for i, val in enumerate(osi_row[1:].values) if pd.notna(val)
