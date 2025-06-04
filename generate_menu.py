@@ -68,7 +68,8 @@ ajouter_critere() {
     
     if [ "$fichiers_count" -eq 0 ]; then
         echo "Critère trop restrictif. Pour le moment je n’ai rien en base."
-        exit 0
+        proposer_nouvelle_recherche
+        return 0
     fi
 
     read -p "Voulez-vous completer par un autre critere ? (O/N) : " continuer
@@ -84,8 +85,11 @@ ajouter_critere() {
                 logic="OU"
             fi
             main_menu ;;
-        N) lancer_recherche ;;
-        Q) echo "Sortie." ; exit 0 ;;
+        N) lancer_recherche 
+           proposer_nouvelle_recherche
+           return 0
+           ;;
+        Q) echo "Merci d'avoir utilisé l'outil. Au revoir !" ; exit 0 ;;
         *) echo "DONNÉE INCORRECTE" ; ajouter_critere ;;
     esac
 }
@@ -107,7 +111,28 @@ lancer_recherche() {
         echo "Résultat de la recherche :"
         echo "$fichiers" | xargs -I {} echo "{}"
     fi
-    exit 0
+    proposer_nouvelle_recherche
+}
+
+proposer_nouvelle_recherche() {
+    while true; do
+        read -p "Voulez-vous effectuer une nouvelle recherche ? (O/N) : " reponse
+        reponse=$(echo "$reponse" | tr '[:lower:]' '[:upper:]')
+        case $reponse in
+            O)
+                search_terms=()
+                logic="OU"
+                main_menu
+                ;;
+            N) 
+                echo "Merci d'avoir utilisé l'outil. Au revoir !"
+                exit 0
+                ;;
+            *) 
+                echo "DONNÉE INCORRECTE"
+                ;;
+        esac
+    done
 }
 
 main_menu() {
@@ -125,7 +150,7 @@ main_menu() {
             for i in "${!criteres[@]}"; do echo "$((i+1)) - ${criteres[i]}"; done
             read -p "Choisissez un critère (1/2/3 ou Q pour quitter) : " critere_choix
             critere_choix=$(echo "$critere_choix" | tr '[:lower:]' '[:upper:]')
-            [[ "$critere_choix" == "Q" ]] && echo "Sortie." && exit 0
+            [[ "$critere_choix" == "Q" ]] && echo "Merci d'avoir utilisé l'outil. Au revoir !" && exit 0
             if [[ "$critere_choix" =~ ^[1-3]$ ]]; then
                 selection="${criteres[$((critere_choix-1))]}"
                 motcle=$(echo "$selection" | cut -d'-' -f2)
@@ -142,7 +167,7 @@ main_menu() {
             for i in "${!osi_layers[@]}"; do echo "$((i+1)) - ${osi_layers[i]}"; done
             read -p "Choisissez une couche (numéro ou Q pour quitter) : " osi_choix
             osi_choix=$(echo "$osi_choix" | tr '[:lower:]' '[:upper:]')
-            [[ "$osi_choix" == "Q" ]] && echo "Sortie." && exit 0
+            [[ "$osi_choix" == "Q" ]] && echo "Merci d'avoir utilisé l'outil. Au revoir !" && exit 0
             if [[ "$osi_choix" =~ ^[0-9]+$ ]] && [ "$osi_choix" -ge 1 ] && [ "$osi_choix" -le ${#osi_layers[@]} ]; then
                 selection="${osi_layers[$((osi_choix-1))]}"
                 motcle=$(echo "$selection" | cut -d'-' -f2-)
@@ -159,7 +184,7 @@ main_menu() {
             for i in "${!attaques[@]}"; do echo "$((i+1)) - ${attaques[i]}"; done
             read -p "Choisissez un type d'attaque (numéro ou Q pour quitter) : " attaque_choix
             attaque_choix=$(echo "$attaque_choix" | tr '[:lower:]' '[:upper:]')
-            [[ "$attaque_choix" == "Q" ]] && echo "Sortie." && exit 0
+            [[ "$attaque_choix" == "Q" ]] && echo "Merci d'avoir utilisé l'outil. Au revoir !" && exit 0
             if [[ "$attaque_choix" =~ ^[0-9]+$ ]] && [ "$attaque_choix" -ge 1 ] && [ "$attaque_choix" -le ${#attaques[@]} ]; then
                 selection="${attaques[$((attaque_choix-1))]}"
                 motcle=$(echo "$selection" | cut -d'-' -f2-)
@@ -171,7 +196,7 @@ main_menu() {
                 main_menu
             fi
             ;;
-        Q) echo "Sortie." ; exit 0 ;;
+        Q) echo "Merci d'avoir utilisé l'outil. Au revoir !" ; exit 0 ;;
         *) echo "DONNÉE INCORRECTE" ; main_menu ;;
     esac
 }
