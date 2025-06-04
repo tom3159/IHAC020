@@ -68,7 +68,7 @@ Ici un exemple d'outils que vous pouvez telecharger :
 sudo snap install glow
 ```
 ```
-glown FICHIER.MD
+glow FICHIER.MD
 ```
 ---
 ---
