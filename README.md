@@ -31,7 +31,7 @@ Lancer votre environement virtuel python
    pip install pandas openpyxl
    python3 generate_menu.py
    ```
-
+### Lancemment du python pour generer le fichier
 ```
 python3 generate_menu.py
 ```
