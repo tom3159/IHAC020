@@ -26,6 +26,7 @@ Bienvenue dans ce projet ! Ce dépôt contient tous les fichiers nécessaires po
 Lancer votre environement virtuel python
 ### Exemple non contractuel
    ```
+   #exemple pour les ubuntu et kali linux avec python déja installer
    python3 -m venv venv
    source venv/bin/activate
    pip install pandas openpyxl
