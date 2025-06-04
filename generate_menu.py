@@ -20,7 +20,7 @@ df_osi_layers = pd.read_excel(fichier_excel, sheet_name="RISQUES_ATTAQUES")
 osi_row = df_osi_layers.iloc[0]
 
 if pd.isna(osi_row.iloc[0]):
-    osi_layers = ["1-Couche 1"] + [
+    osi_layers = ["Couche 1"] + [
         f"Couche {str(int(float(val)))}"
         for i, val in enumerate(osi_row[1:].values) if pd.notna(val)
     ]
