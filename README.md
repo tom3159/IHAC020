@@ -47,6 +47,7 @@ Pour relancer l’outil ultérieurement :
 ```
 .\menu_interactif.sh
 ```
+## Exemples
 
 
 ## Fonctionnalités du menu interactif
