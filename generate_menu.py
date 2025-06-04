@@ -162,7 +162,7 @@ main_menu() {
             [[ "$attaque_choix" == "Q" ]] && echo "Sortie." && exit 0
             if [[ "$attaque_choix" =~ ^[0-9]+$ ]] && [ "$attaque_choix" -ge 1 ] && [ "$attaque_choix" -le ${#attaques[@]} ]; then
                 selection="${attaques[$((attaque_choix-1))]}"
-                motcle=$(echo "$selection")
+                motcle=$(echo "$selection" | cut -d'-' -f2-)
                 motcle_normalize=$(normalize_string "$motcle")
                 search_terms+=("$motcle_normalize")
                 ajouter_critere
