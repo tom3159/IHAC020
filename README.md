@@ -36,7 +36,6 @@ Lancer votre environement virtuel python
 ```
 python3 generate_menu.py
 ```
-
 À la fin, le script genere automatiquement `menu_interactif.sh`.
 render le executable
 ```
@@ -46,6 +45,12 @@ chmod +x menu_interactif.sh
 Pour relancer l’outil ultérieurement :
 ```
 .\menu_interactif.sh
+```
+
+### Deplacer les .MD dans votre home
+```
+chmod +x
+.\install.sh
 ```
 ## Exemples
 
