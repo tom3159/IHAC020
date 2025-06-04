@@ -13,7 +13,7 @@ ws_osi_layers = wb['RISQUES_ATTAQUES']
 ws_attack_types = wb['ATTAQUES_OUTILS']
 
 # Critères de sécurité fixes
-criteres = ["1-Confidentialité", "2-Intégrité", "3-Disponibilité"]
+criteres = ["Confidentialité", "Intégrité", "Disponibilité"]
 
 # Charger le DataFrame pour les couches OSI
 df_osi_layers = pd.read_excel(fichier_excel, sheet_name="RISQUES_ATTAQUES")
@@ -21,7 +21,7 @@ osi_row = df_osi_layers.iloc[0]
 
 if pd.isna(osi_row.iloc[0]):
     osi_layers = ["1-Couche 1"] + [
-        f"{i+2}-Couche {str(int(float(val)))}"
+        f"Couche {str(int(float(val)))}"
         for i, val in enumerate(osi_row[1:].values) if pd.notna(val)
     ]
 else:
@@ -31,7 +31,7 @@ else:
     ]
 
 attaques = [row[0] for row in ws_attack_types.iter_rows(min_row=2, values_only=True) if row[0]]
-attaques_formatees = [f"{i+1}-{attaque}" for i, attaque in enumerate(attaques)]
+attaques_formatees = [f"{attaque}" for i, attaque in enumerate(attaques)]
 
 with open("menu_interactif.sh", "w") as f:
     f.write("""#!/bin/bash
